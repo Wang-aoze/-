@@ -108,13 +108,7 @@ def main(city):
     csv_writer = csv.writer(f)
     # 构建列表头
     csv_writer.writerow(["线路名称", "线路类型", "运行时间", "总里程", "公交公司", "正向路线", "反向路线"])
-    mykey = ['8e389fd8b3702f13e25c08bc8597254c', 'c6c6be310712bd43cdc2ed6697f410e3',
-             '0b56b5920e8b821212eec4c6e29ec614', '0cff5270130766ca60064716d933ca2a',
-             '30254372c5905c194be7f559bab417bc', 'a993ed09d22b3b37040efc80ebde788f',
-             '2ef85a59111146c712c2397d53f403d7', 'e3645c6ec750c1ab8f9da48bc799d9e5',
-             '617292d2f1fbd3ffc3941697d6797933', 'fa9e529c6ec07a1066da0c5e60f64acf',
-             '06842c0b424618c420fbb9876558cac7', 'baa4f672e8fd466bd4a57ad128ee82e6']
-    # key提供者鸣谢（顺序）：韩建智，覃康松，徐程，徐鑫，张建波，徐英琪，葛垠鲁，孙一城，田斌,刘涵，张昊哲，李佳儒
+    mykey = []
     line_num = len(data)
     key_num = len(mykey)
     num_state = int(line_num / key_num)
